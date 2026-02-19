@@ -1,0 +1,4 @@
+node_modules/
+hostinger-auth.json
+ssh_*.txt
+ssh2_*.txt

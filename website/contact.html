@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — GainAI</title>
+<meta name="description" content="Get in touch with GainAI. Book a free automation audit and find out how AI can save your business hours every week.">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Sora:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="navbar">
+  <a href="index.html" class="logo">G<span class="ai-highlight">ai</span>n<span class="logo-dot"></span></a>
+  <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html#services">Services</a></li>
+    <li><a href="index.html#pricing">Pricing</a></li>
+    <li><a href="index.html#process">How It Works</a></li>
+    <li><a href="index.html#faq">FAQ</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="contact.html" class="nav-cta">Get Started</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="contact-hero">
+  <div class="hero-badge" style="animation: fadeInUp 0.6s ease-out;">Let's Talk</div>
+  <h1 style="font-family: var(--font-display); font-size: clamp(2.5rem, 5vw, 4rem); font-weight: 800; letter-spacing: -2px; margin-bottom: 16px; animation: fadeInUp 0.6s ease-out 0.1s both; position: relative;">Get in <span style="color: var(--gain-green);">touch</span></h1>
+  <p style="color: var(--gain-gray-400); font-size: 1.1rem; max-width: 500px; margin: 0 auto; line-height: 1.7; animation: fadeInUp 0.6s ease-out 0.2s both; position: relative;">Book a free audit, ask a question, or just say hello. We'll get back to you within 24 hours.</p>
+</section>
+
+<!-- CONTACT CONTENT -->
+<div class="contact-grid">
+  <!-- Info Column -->
+  <div class="contact-info reveal-left">
+    <h3>Let's find the quick wins hiding in your workflow.</h3>
+    <p>Whether you're interested in local visibility management, invoice automation, or a custom AI solution — we'd love to hear from you. No pressure, no upselling. Just a conversation about what's possible.</p>
+
+    <div class="contact-detail">
+      <div class="contact-detail-icon">&#9993;</div>
+      <div class="contact-detail-text">
+        <span class="label">Email</span>
+        hello@gainaiservices.co.uk
+      </div>
+    </div>
+    <div class="contact-detail">
+      <div class="contact-detail-icon">&#127760;</div>
+      <div class="contact-detail-text">
+        <span class="label">Website</span>
+        gainaiservices.co.uk
+      </div>
+    </div>
+    <div class="contact-detail">
+      <div class="contact-detail-icon">&#128205;</div>
+      <div class="contact-detail-text">
+        <span class="label">Location</span>
+        United Kingdom
+      </div>
+    </div>
+    <div class="contact-detail" style="border-bottom: none;">
+      <div class="contact-detail-icon">&#9201;</div>
+      <div class="contact-detail-text">
+        <span class="label">Response Time</span>
+        Within 24 hours
+      </div>
+    </div>
+  </div>
+
+  <!-- Form Column -->
+  <div class="contact-form-card reveal-right">
+    <form id="contactForm" novalidate>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="firstName">First Name *</label>
+          <input type="text" id="firstName" name="firstName" required placeholder="John">
+          <div class="form-error">Please enter your first name</div>
+        </div>
+        <div class="form-group">
+          <label for="lastName">Last Name *</label>
+          <input type="text" id="lastName" name="lastName" required placeholder="Smith">
+          <div class="form-error">Please enter your last name</div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="email">Email Address *</label>
+        <input type="email" id="email" name="email" required placeholder="john@yourbusiness.co.uk">
+        <div class="form-error">Please enter a valid email address</div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" placeholder="07000 000000">
+        </div>
+        <div class="form-group">
+          <label for="business">Business Name</label>
+          <input type="text" id="business" name="business" placeholder="Your Business Ltd">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="service">What are you interested in? *</label>
+        <select id="service" name="service" required>
+          <option value="" disabled selected>Select a service...</option>
+          <option value="local-visibility">Local Visibility Management</option>
+          <option value="invoice-automation">Invoice Payment Follow-Up</option>
+          <option value="custom-automation">Custom AI Automation</option>
+          <option value="free-audit">Free Audit</option>
+          <option value="general">General Enquiry</option>
+        </select>
+        <div class="form-error">Please select a service</div>
+      </div>
+      <div class="form-group">
+        <label for="message">Message *</label>
+        <textarea id="message" name="message" required placeholder="Tell us about your business and what you're looking to achieve..."></textarea>
+        <div class="form-error">Please enter your message</div>
+      </div>
+      <button type="submit" class="btn-primary" style="width: 100%; text-align: center;">Send Message &rarr;</button>
+    </form>
+    <div class="form-success" id="formSuccess">
+      <h3>Message Sent!</h3>
+      <p>Thanks for getting in touch. We'll get back to you within 24 hours.</p>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-content">
+    <div class="footer-brand">
+      <a href="index.html" class="logo">G<span class="ai-highlight">ai</span>n<span class="logo-dot"></span></a>
+      <p>AI-powered automation for UK businesses. We save you hours every week so you can focus on growth.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <ul>
+        <li><a href="index.html#local-visibility">Local Visibility</a></li>
+        <li><a href="index.html#invoice-automation">Invoice Automation</a></li>
+        <li><a href="index.html#services">AI Workflows</a></li>
+        <li><a href="index.html#services">Smart Reporting</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="index.html#process">How It Works</a></li>
+        <li><a href="index.html#pricing">Pricing</a></li>
+        <li><a href="index.html#faq">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Get in Touch</h4>
+      <ul>
+        <li><a href="mailto:hello@gainaiservices.co.uk">hello@gainaiservices.co.uk</a></li>
+        <li><a href="contact.html">Book a Free Audit</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-logo">G<span class="ai-hl">ai</span>n</div>
+    <p>&copy; 2026 GainAI. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- CHATBOT -->
+<button class="chatbot-toggle" id="chatbotToggle" aria-label="Open chat">
+  <span class="chat-icon">&#128172;</span>
+  <span class="close-icon">&#10005;</span>
+</button>
+
+<div class="chatbot-window" id="chatbotWindow">
+  <div class="chatbot-header">
+    <div class="chatbot-avatar">G</div>
+    <div class="chatbot-header-text">
+      <h4>GainAI Assistant</h4>
+      <span>Online now</span>
+    </div>
+  </div>
+  <div class="chatbot-messages" id="chatMessages"></div>
+  <div class="chatbot-input">
+    <input type="text" id="chatInput" placeholder="Type your message..." autocomplete="off">
+    <button id="chatSend" aria-label="Send message">&#10148;</button>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+<script src="js/chatbot.js"></script>
+</body>
+</html>
