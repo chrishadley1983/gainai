@@ -446,8 +446,8 @@ nav.scrolled {
 /* ===== SERVICES HEADER ===== */
 .services-header {
   display: flex;
-  align-items: center;
-  gap: 64px;
+  align-items: flex-start;
+  gap: 48px;
   margin-bottom: 64px;
 }
 
@@ -461,13 +461,13 @@ nav.scrolled {
 }
 
 .services-header-visual {
-  flex: 0 0 220px;
+  flex: 0 0 280px;
+  padding-top: 24px;
 }
 
 .pillars-illustration {
   width: 100%;
   height: auto;
-  max-height: 200px;
 }
 
 /* Pillar hover glow */
@@ -1674,7 +1674,7 @@ footer {
   .faq-section { padding-left: 24px; padding-right: 24px; }
 
   .services-header { flex-direction: column; gap: 24px; }
-  .services-header-visual { flex: 0 0 auto; max-width: 200px; }
+  .services-header-visual { flex: 0 0 auto; max-width: 220px; padding-top: 0; }
   .services-grid { grid-template-columns: 1fr; }
 
   .process-steps { grid-template-columns: 1fr; }
