@@ -443,6 +443,89 @@ nav.scrolled {
   line-height: 1.5;
 }
 
+/* ===== SERVICES HEADER ===== */
+.services-header {
+  display: flex;
+  align-items: center;
+  gap: 64px;
+  margin-bottom: 64px;
+}
+
+.services-header-text {
+  flex: 1;
+  min-width: 0;
+}
+
+.services-header-text .section-desc {
+  margin-bottom: 0;
+}
+
+.services-header-visual {
+  flex: 0 0 380px;
+}
+
+.pillars-illustration {
+  width: 100%;
+  height: auto;
+}
+
+/* Pillar hover glow */
+.pillar-group rect + rect { transition: opacity 0.4s ease; }
+.pillar-group:hover rect + rect { opacity: 1; }
+.pillar-group { cursor: default; }
+
+/* Icon hover lift */
+.pillar-icon { transition: transform 0.3s ease; }
+
+/* Floating particles */
+.float-particle {
+  animation: floatParticle 4s ease-in-out infinite;
+}
+.float-particle.delay-1 { animation-delay: 1.3s; }
+.float-particle.delay-2 { animation-delay: 2.6s; }
+
+@keyframes floatParticle {
+  0%, 100% { transform: translateY(0); opacity: 0.3; }
+  50% { transform: translateY(-8px); opacity: 0.6; }
+}
+
+/* Pulse lines */
+.pulse-line {
+  animation: pulseLine 3s ease-in-out infinite;
+}
+.pulse-line.delay-1 { animation-delay: 1s; }
+.pulse-line.delay-2 { animation-delay: 2s; }
+
+@keyframes pulseLine {
+  0%, 100% { stroke-opacity: 0.15; }
+  50% { stroke-opacity: 0.45; }
+}
+
+/* Icon background pulse */
+.icon-bg {
+  animation: iconPulse 3s ease-in-out infinite;
+}
+.pillar-2 .icon-bg { animation-delay: 0.5s; }
+.pillar-3 .icon-bg { animation-delay: 1s; }
+
+@keyframes iconPulse {
+  0%, 100% { r: 22; }
+  50% { r: 25; }
+}
+
+/* Pillar entrance stagger */
+.pillar-group {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: pillarRise 0.6s ease-out forwards;
+}
+.pillar-2 { animation-delay: 0.15s; }
+.pillar-3 { animation-delay: 0.3s; }
+
+@keyframes pillarRise {
+  to { opacity: 1; transform: translateY(0); }
+}
+
 /* ===== SERVICES GRID ===== */
 .services-grid {
   display: grid;
@@ -1589,6 +1672,8 @@ footer {
   .pricing-section,
   .faq-section { padding-left: 24px; padding-right: 24px; }
 
+  .services-header { flex-direction: column; gap: 32px; }
+  .services-header-visual { flex: 0 0 auto; max-width: 300px; }
   .services-grid { grid-template-columns: 1fr; }
 
   .process-steps { grid-template-columns: 1fr; }
