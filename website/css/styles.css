@@ -461,12 +461,13 @@ nav.scrolled {
 }
 
 .services-header-visual {
-  flex: 0 0 380px;
+  flex: 0 0 220px;
 }
 
 .pillars-illustration {
   width: 100%;
   height: auto;
+  max-height: 200px;
 }
 
 /* Pillar hover glow */
@@ -1672,8 +1673,8 @@ footer {
   .pricing-section,
   .faq-section { padding-left: 24px; padding-right: 24px; }
 
-  .services-header { flex-direction: column; gap: 32px; }
-  .services-header-visual { flex: 0 0 auto; max-width: 300px; }
+  .services-header { flex-direction: column; gap: 24px; }
+  .services-header-visual { flex: 0 0 auto; max-width: 200px; }
   .services-grid { grid-template-columns: 1fr; }
 
   .process-steps { grid-template-columns: 1fr; }
